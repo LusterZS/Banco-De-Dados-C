@@ -1,0 +1,116 @@
+FILE EM C:
+é uma função usada para abri ler e criar arquivos
+exemplo:
+ANOTAÇÕES:
+//SEMPRE DECLARAR ONDE O FPRINTF TEM QUE ESCREVER. 14/03/2026:02:31
+//CASO QUEIRA DECLARAR UMA VARIAVEL QUE NÃO EXISTE CRIE UM 
+//PONTEIRO QUE RECEBE ESSE VALOR DEPOIS.
+//EX
+//void EX(<tipo> *QLQRNOME){
+//}
+//PARA CHAMAR
+//EX(NOME DA VARIAVEL DENTRO DO MAIN)
+FILE *<Nomedavariavel>;
+
+ NMV = fopen("NM DO SEU ARQUIVO", "modo");
+ 
+ MODOS DE FILE:
+ 
+ r:
+ Abre o aquivo apenas para leitura
+ precisa existir no diretorio
+ 
+ w:
+ abre para escrita
+ se o arquivo existir apaga todo o conteudo.
+ se não, cria um novo.
+ 
+ a:
+ abre para adicionar conteudo no final
+ se não existir cria um.
+ 
+ Versões para leitura e escrita.
+ 
+ r+:
+ leitura e escrita
+ precisa existir
+ 
+ w+:
+ abre para leitura e escrita mas apaga tudo primeiro
+ se não existir, Cria
+ 
+ a+:
+ Abre para leitura e escrita
+ sempre escreve tudo no final
+ se não existir cria
+ ...........
+ 
+ FILE FUNÇÕES:
+ 
+ _CONTROLE
+ fopen()
+  "Abre o arquivo"
+ 
+ freopen()
+  "Re abre o arquivo ja aberto"
+  
+ fclose()
+  "Fecha o arquivo"
+
+_LEITURA 
+  fgetc()
+   getc()
+    "Le um caractere" 
+    
+ fgets()
+  "Le uma linha ou texto"
+  
+  fscanf()
+  Le dados formatados
+  
+_ESCRITA
+
+ fputc()
+ putc()
+ Escreve CARACTERES
+ 
+ Fputs()
+ Escreve String
+ 
+ fprintf()
+ Escreve Formatado
+ 
+ Fwrite()
+ Escreve Bloco binario
+ 
+ Funções de posição
+ 
+ fseek()
+ Ir para uma posição especifica
+ 
+ ftell()
+ Descobre posição atual
+ 
+ rewind()
+ VOlta pro inicio
+ 
+ Função de estado e erro
+ 
+ feof()
+ Detecta Fim do arquivo
+ 
+ ferror()
+ Detecta erro de leitura e escrita
+ 
+ clearerr()
+ Limpa erro
+ 
+  
+   
+   
+  
+  
+ 
+ 
+ 
+ 
